@@ -98,6 +98,9 @@ local Input = MainTab:CreateInput({
 local Button = MainTab:CreateButton({
    Name = "ESP",
    Callback = function()
+_G.  loadstring(game:HttpGet("https://pastebin.com/raw/s7viVmDR"))()
+   end, _G.not  loadstring(game:HttpGet("https://pastebin.com/raw/s7viVmDR"))()
+   end,
    loadstring(game:HttpGet("https://pastebin.com/raw/s7viVmDR"))()
    end,
 })
