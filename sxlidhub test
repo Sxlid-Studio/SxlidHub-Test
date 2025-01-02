@@ -1,0 +1,13 @@
+local fly = {}
+
+function fly.start()
+    print("Flying started!")
+    -- Add flying logic here
+end
+
+function fly.stop()
+    print("Flying stopped!")
+    -- Add logic to stop flying here
+end
+
+return fly
