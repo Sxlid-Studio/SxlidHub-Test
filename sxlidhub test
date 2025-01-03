@@ -473,7 +473,15 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
 end)
    end,
 })
-local GameTab = Window:CreateTab("Game Explooits", 4483362458) -- Title, Image
+
+local Button = MainTab:CreateButton({
+   Name = "Anti AFK",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+   end,
+})
+
+local GameTab = Window:CreateTab("Game Exploits", 4483362458) -- Title, Image
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
