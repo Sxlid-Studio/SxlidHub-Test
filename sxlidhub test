@@ -978,6 +978,13 @@ local Button = GameTab:CreateButton({
    end,
 })
 
+local Button = GameTab:CreateButton({
+   Name = "Grand Piece Online",
+   Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3259542ebb994ec69311a5dfdc23daa5.lua"))()
+   end,
+})
+
 local Section = GameTab:CreateSection("🔫Shooting Games🔫")
 
 local Button = GameTab:CreateButton({
