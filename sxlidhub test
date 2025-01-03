@@ -1036,3 +1036,10 @@ Rayfield:Notify({
 })
    end,
 })
+
+local Button = MiscTab:CreateButton({
+   Name = "Destroy interface",
+   Callback = function()
+Rayfield:Destroy()
+   end,
+})
