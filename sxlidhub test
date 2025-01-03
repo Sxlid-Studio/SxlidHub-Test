@@ -1043,3 +1043,10 @@ local Button = MiscTab:CreateButton({
 Rayfield:Destroy()
    end,
 })
+
+local Button = GamesTab:CreateButton({
+   Name = "🏈Nfl Universe🏈",
+   Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/03624f832da93e45f8dc1d8234f7bfca.lua"))()
+   end,
+})
