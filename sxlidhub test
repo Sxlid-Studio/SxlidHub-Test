@@ -1020,6 +1020,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/
   end,
 })
 
+local Button = GameTab:CreateButton({
+   Name = "🏈Nfl Universe🏈",
+   Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/03624f832da93e45f8dc1d8234f7bfca.lua"))()
+   end,
+})
+
 local Section = GameTab:CreateSection("I WILL ADD MORE I JUST MADE THIS")
 
 local MiscTab = Window:CreateTab("Misc", 4483362458) -- Title, Image
@@ -1044,9 +1051,3 @@ Rayfield:Destroy()
    end,
 })
 
-local Button = GamesTab:CreateButton({
-   Name = "🏈Nfl Universe🏈",
-   Callback = function()
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/03624f832da93e45f8dc1d8234f7bfca.lua"))()
-   end,
-})
