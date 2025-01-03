@@ -1022,5 +1022,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/
 
 local Section = GameTab:CreateSection("I WILL ADD MORE I JUST MADE THIS")
 
+local MiscTab = Window:CreateTab("Misc", 4483362458) -- Title, Image
+local Section = MiscTab:CreateSection("Misc")
 
-
+local Button = MiscTab:CreateButton({
+   Name = "Discord",
+   Callback = function()
+Rayfield:Notify({
+   Title = "https://discord.gg/Ddh9M63D",
+   Content = "https://discord.gg/Ddh9M63D",
+   Duration = 6.5,
+   Image = "rewind",
+})
+   end,
+})
