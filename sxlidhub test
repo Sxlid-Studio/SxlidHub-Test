@@ -978,7 +978,7 @@ local Button = GameTab:CreateButton({
    end,
 })
 
-local Section = GameTab:CreateSection("🔫Shooting Games🔫)
+local Section = GameTab:CreateSection("🔫Shooting Games🔫")
 
 local Button = GameTab:CreateButton({
    Name = "Rivals Aimbot/Esp",
@@ -1000,5 +1000,4 @@ local Button = MainTab:CreateButton({
    loadstring(game:HttpGet('https://raw.githubusercontent.com/DarkNetworks/Infinite-Yield/main/latest.lua'))()
    end,
 })
-
 
