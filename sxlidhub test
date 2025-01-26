@@ -49,7 +49,6 @@ local Button = MainTab:CreateButton({
    Callback = function()
        --Toggles the infinite jump between on or off on every script run
 _G.infinjump = not _G.infinjump
-
 if _G.infinJumpStarted == nil then
 	--Ensures this only runs once to save resources
 	_G.infinJumpStarted = true
@@ -94,6 +93,14 @@ local Input = MainTab:CreateInput({
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Text)
    end,
 })
+
+local Button = MainTab:CreateButton({
+   Name = "System Broken | Telporting, Emotes, Animations & More",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+   end,
+})
+
 
 local Toggle = MainTab:CreateToggle({
    Name = "Esp | Press H after Toggle | Dont turn toggle off after use",
